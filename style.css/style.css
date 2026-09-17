@@ -95,7 +95,7 @@ nav a:hover {
 }
 
 .hero-img img {
-    max-width: 500px;
+    max-width: 450px;
     width: 100%;
     height: auto;
     display: block;
@@ -150,11 +150,12 @@ nav a:hover {
 }
 
 .sobre-img {
-    max-width: 500px; 
     width: 100%;
+    max-width: 400px;
     height: auto;
     border-radius: 20px;
     box-shadow: 0 0px 20px var(--black);
+    flex-shrink: 0;
 }
 
 .sobre-conteudo p {
@@ -206,12 +207,6 @@ nav a:hover {
 .card h3 {
     color: var(--accent-bright);
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-/* ADICIONADO: Garante que imagens dos cards respeitem o tamanho da tela do celular */
-.card img, .sobre-img {
-    max-width: 100%;
-    height: auto;
 }
 
 .album-img {
@@ -370,6 +365,10 @@ footer {
     .sobre-conteudo {
         flex-direction: column;
         text-align: center;
+    }
+
+    .sobre-img {
+        max-width: 100%;
     }
 
     .btn {
