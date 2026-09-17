@@ -1,12 +1,12 @@
 /*PALETA DE CORES*/
 :root {
-    --bg-dark: #0a0e1a;        /* Azul bem escuro / Quase preto */
-    --bg-medium: #131d33;      /* Azul escuro intermediário */
-    --bg-card: #1c2b4a;        /* Azul escuro para cartões */
-    --accent-light: #5294e2;   /* Azul claro de destaque */
-    --accent-bright: #7db3f0;  /* Azul claro brilhante */
-    --text-white: #f0f4f8;     /* Branco suave para leitura */
-    --text-muted: #a0aec0;     /* Azul claro acinzentado */
+    --bg-dark: #0a0e1a;
+    --bg-medium: #131d33;
+    --bg-card: #1c2b4a;
+    --accent-light: #5294e2;
+    --accent-bright: #7db3f0;
+    --text-white: #f0f4f8;
+    --text-muted: #a0aec0;
     --black: #000000;
 }
 
@@ -82,7 +82,6 @@ nav a:hover {
     flex: 1;
 }
 
-
 #hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -113,7 +112,7 @@ nav a:hover {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-weight: bold;
     transition: background-color 0.3s, transform 0.2s;
 }
@@ -122,7 +121,6 @@ nav a:hover {
     background-color: var(--accent-bright);
     transform: translateY(-2px);
 }
-
 
 /*SOBRE SECTION*/
 .sobre {
@@ -210,6 +208,12 @@ nav a:hover {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* ADICIONADO: Garante que imagens dos cards respeitem o tamanho da tela do celular */
+.card img, .sobre-img {
+    max-width: 100%;
+    height: auto;
+}
+
 .album-img {
     margin: 2rem auto 1rem auto;
     width: 100%;
@@ -218,13 +222,6 @@ nav a:hover {
     object-fit: cover;
     display: block;
     border-radius: 8px;
-}
-
-.bottom {
-    display: block;
-    width: 200px;
-    text-align: center;
-    margin: 0.5rem auto 0;
 }
 
 /*CURIOSIDADES*/
@@ -244,7 +241,7 @@ nav a:hover {
     margin-bottom: 1rem;
     margin-top: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 1.5rem;
     background-color: var(--accent-light);
     color: var(--black);
     border-radius: 20px;
@@ -264,7 +261,7 @@ nav a:hover {
 }
 
 .curiosities li {
-    font-size: larger;
+    font-size: 1rem;
     margin-bottom: 0.8rem;
     background: transparent;
     color: var(--text-white);
@@ -346,7 +343,6 @@ footer {
     background-color: var(--accent-bright);
     transform: translateY(-3px);
 }
-
 
 /*RESPONSIVIDADE*/
 @media (max-width: 768px) {
