@@ -26,6 +26,7 @@ body {
     line-height: 1.6;
     background-color: var(--bg-dark);
     color: var(--text-white);
+    overflow-x: hidden; /* Evita que barras de rolagem horizontais apareçam */
 }
 
 /*CABEÇALHO*/
@@ -38,6 +39,8 @@ header {
 }
 
 nav {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,6 +71,8 @@ nav a:hover {
 
 /*SEÇÃO HERO*/
 #hero {
+    max-width: 1200px;
+    margin: 0 auto;
     min-height: 80vh;
     background-color: var(--bg-dark);
     display: flex;
@@ -124,9 +129,11 @@ nav a:hover {
 
 /*SEÇÃO SOBRE*/
 .sobre {
+    max-width: 1200px;
     padding: 80px 24px;
     background-color: var(--bg-medium);
     margin: 0 auto;
+    border-radius: 15px;
 }
 
 .sobre h2 {
@@ -146,7 +153,7 @@ nav a:hover {
     flex-direction: row;
     align-items: center; 
     gap: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .sobre-img {
@@ -165,6 +172,7 @@ nav a:hover {
 
 /*SEÇÃO DOS ALBUNS*/
 .services {
+    max-width: 1200px;
     padding: 80px 24px;
     background-color: var(--bg-dark);
     margin: 0 auto;
@@ -195,7 +203,8 @@ nav a:hover {
     border: 1px solid var(--bg-medium);
     border-radius: 10px;
     padding: 32px;
-    flex: 1 1 280px;
+    flex: 1 1 300px;
+    max-width: 360px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
@@ -221,6 +230,7 @@ nav a:hover {
 
 /*ESTILO DOS PLAYERS DO SPOTIFY*/
 .spotify-embed {
+    width: 100%;
     border-radius: 12px;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
@@ -228,6 +238,12 @@ nav a:hover {
 }
 
 /*CURIOSIDADES*/
+.curiosities {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
 .curiosities h2 {
     margin-bottom: 3rem;
     margin-top: 20px;
@@ -274,16 +290,17 @@ nav a:hover {
     margin-bottom: 0;
 }
 
-/*SEÇÃO DAS ROUPAS*/
+/*SEÇÃO DAS ROUPAS (CORRIGIDO)*/
 .estilos-2pac {
-    padding: 80px 15px;
-    margin: 0 15px;
+    max-width: 1200px;
+    padding: 80px 24px;
+    margin: 0 auto;
 }
 
 .estilos-2pac h2 {
     text-align: center;
     font-size: 2rem;
-    margin-top: 70px;
+    margin-top: 2rem;
     margin-bottom: 50px;
     color: var(--accent-bright);
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -293,24 +310,64 @@ nav a:hover {
     padding: 0.8rem;
 }
 
-.estilos-2pac img {
-    height: 340px;
-    max-height: none;
+.estilos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.estilo-card {
+    flex: 1 1 250px;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-card);
+    padding: 1rem;
     border-radius: 15px;
-    box-shadow: 0 0 35px var(--black);
+    border: 1px solid var(--bg-medium);
+}
+
+.estilos-2pac img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 20px var(--black);
 }
 
 .estilos-2pac h3 {
     font-size: 15px;
-    margin-top: 2rem;
-    margin-left: 10px;
+    margin-top: 1rem;
+    margin-left: 0;
+    text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .estilos-2pac p {
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 10px;
+    margin-left: 0;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+/*AGRADECIMENTOS / MENSAGEM FINAL*/
+.agradecimento {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: var(--bg-card);
+    border-radius: 15px;
+    border: 1px solid var(--accent-light);
+    text-align: center;
+}
+
+.agradecimento h3 {
+    color: var(--accent-bright);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 1rem;
 }
 
 /*RODAPÉ*/
@@ -432,5 +489,10 @@ footer {
 
     .card {
         width: 100%;
+        max-width: 100%;
+    }
+
+    .estilo-card {
+        max-width: 100%;
     }
 }
