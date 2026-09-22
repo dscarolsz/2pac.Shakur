@@ -66,7 +66,7 @@ nav a:hover {
     color: var(--black);
 }
 
-/*HERO SECTION*/
+/*SEÇÃO HERO*/
 #hero {
     min-height: 80vh;
     background-color: var(--bg-dark);
@@ -122,7 +122,7 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-/*SOBRE SECTION*/
+/*SEÇÃO SOBRE*/
 .sobre {
     padding: 80px 24px;
     background-color: var(--bg-medium);
@@ -163,7 +163,7 @@ nav a:hover {
     color: var(--text-white);
 }
 
-/*ÁLBUNS SECTION*/
+/*SEÇÃO DOS ALBUNS*/
 .services {
     padding: 80px 24px;
     background-color: var(--bg-dark);
@@ -219,6 +219,14 @@ nav a:hover {
     border-radius: 8px;
 }
 
+/*ESTILO DOS PLAYERS DO SPOTIFY*/
+.spotify-embed {
+    border-radius: 12px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    border: none;
+}
+
 /*CURIOSIDADES*/
 .curiosities h2 {
     margin-bottom: 3rem;
@@ -264,6 +272,45 @@ nav a:hover {
 
 .curiosities li:last-child {
     margin-bottom: 0;
+}
+
+/*SEÇÃO DAS ROUPAS*/
+.estilos-2pac {
+    padding: 80px 15px;
+    margin: 0 15px;
+}
+
+.estilos-2pac h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    color: var(--accent-bright);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--bg-card);
+    border: 1px solid var(--accent-light);
+    border-radius: 20px;
+    padding: 0.8rem;
+}
+
+.estilos-2pac img {
+    height: 340px;
+    max-height: none;
+    border-radius: 15px;
+    box-shadow: 0 0 35px var(--black);
+}
+
+.estilos-2pac h3 {
+    font-size: 15px;
+    margin-top: 2rem;
+    margin-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.estilos-2pac p {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
 }
 
 /*RODAPÉ*/
